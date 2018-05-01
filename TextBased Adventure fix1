@@ -1,0 +1,42 @@
+# the number of 'moves' needs to be fixed as per input amout = max 6
+
+movesdmade = 0
+
+print('welcome to the house, you are at the entrance hall and can go to the kitchen and keller, where do you want to go?')
+
+answer = input()
+
+print('you are now in the , ' + answer + ', you can now go to the hallway, living room and bathroom, where do you want to go?')
+
+bedroom = ['welcome to the bedroom, this is where people sleep']
+kitchen = ['welcome to the kitchen, this is where people cook']
+stairs = ['welcome to the stairs, this is how people go upstairs']
+hallway = ['welcome to the hallway, this is where people walk']
+keller = ['welcome to the keller, this where people store stuff']
+livingroom = ['welcome to the livingroom, this is where people eat together']
+bathroom = ['welcome to the bathroom, this is where people clean themselves']
+
+matrix = [bedroom,kitchen,stairs,hallway,keller,livingroom,bathroom]
+
+while movesmade < 6:
+   print('where do you want to go?') # There are four spaces in front of print.
+   moves = input()
+   moves = int(moves)
+   movesmade = movesmade + 1
+   if 'bedroom' in answer:
+    print(matrix[0][0],' you now have access to other rooms')
+   elif 'kitchen' in answer:
+    print(matrix[1][0],' you now have access to other rooms')
+   elif 'stairs' in answer:
+    print(matrix[2][0],' you now have access to other rooms')
+   elif 'hallway' in answer:
+    print(matrix[3][0],' you now have access to other rooms')
+   elif 'keller' in answer:
+    print(matrix[4][0],' you now have access to other rooms')
+   elif 'livingroom' in answer:
+    print(matrix[4][0],' you now have access to other rooms')
+   elif 'bathroom' in answer:
+    print(matrix[5][0],' you now have access to other rooms')
+   else:
+    print('the options available are bedroom, kitchen, stairs, hallway, keller, livingroom and bathroom')
+    break
