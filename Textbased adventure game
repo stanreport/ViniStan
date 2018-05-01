@@ -1,0 +1,29 @@
+# create an environment and guide a character through your environment through a text based story
+
+print('Hello, welcome to the house! where do you want to go?')
+answer = input()
+
+bedroom = ['welcome to the bedroom, this is where people sleep']
+kitchen = ['welcome to the kitchen, this is where people cook']
+hallway = ['welcome to the hallway, this is where people walk']
+keller = ['welcome to the keller, this where people store stuff']
+livingroom = ['welcome to the livingroom, this is where people eat together']
+bathroom = ['welcome to the bathroom, this is where people clean themselves']
+
+matrix = [bedroom,kitchen,keller,hallway,livingroom,bathroom]
+
+
+if 'bedroom' in answer:
+  print(matrix[0][0])
+elif 'kitchen' in answer:
+  print(matrix[1][0])
+elif 'keller' in answer:
+  print(matrix[2][0])
+elif 'hallway' in answer:
+  print(matrix[3][0])
+elif 'livingroom' in answer:
+  print(matrix[4][0])
+elif 'bathroom' in answer:
+  print(matrix[5][0])
+else:
+  print('not sure where you want to go.')
