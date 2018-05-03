@@ -1,0 +1,10 @@
+print('Hi!, what is your name')
+
+name = input()
+print('hi ' + name + ', how old are you?')
+age = input()
+print('what do you do for a living?')
+profession = input()
+print('where are you from?')
+country = input()
+print('alright '+ name + ' is ' + age + ' years old, and comes from ' + country)
